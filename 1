@@ -1,0 +1,217 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" ng-app="ecomApp" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+   	  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      	<meta name="apple-mobile-web-app-capable" content="yes">
+      	<link ng-href="http://freemarketingtools.ignorelist.com//dstores/data10/images/apps_favicon.png" rel="shortcut icon" type="image/x-icon" href="http://freemarketingtools.ignorelist.com//dstores/data10/images/apps_favicon.png">
+      				<title translate="lang_cms_fbshare_gettokeninfo_title" class="ng-scope">Lấy thông tin từ Token</title>
+		    <style>.cke{visibility:hidden;}</style></head>
+   	<body style="margin-bottom:30px;" class="ecom container_default ecom_container_desktop">
+		<div class="outer">
+			<div style="height:48px;position:fixed;top:0px;margin-left:6px;z-index:101;" class="slidebar_logo pull-left">
+	      		<a class="clickable" ng-href="/fbapps#/fbshare_dashboard" href="/fbapps#/fbshare_dashboard"><i class="fa fa-home br-red"></i></a>
+			</div>
+			<div class="content">
+				<div ng-eviewmaster="{base_url: false, type: false, template: false}" class="ng-isolate-scope"><!-- uiView: --><div class="mainbar ng-scope" ui-view=""><div ng-eviewcustomerfbsharegettokeninfo="" class="ng-scope"><div>
+	<div class="notification_box  ng-hide" ng-show="cmsglobal.notice_obj.message_counter > 0" translate=""></div>
+	<!-- ngIf: cms_form_data.temp_object.api_data_loaded --><div ng-if="cms_form_data.temp_object.api_data_loaded" class="ng-scope">
+		<div class="mainbar_header" style="width: 100%; position:fixed;top:0px;z-index: 100;padding-right:8px;height:45px;">
+			<div class="row">
+				<div class="col-sm-12 visible-sm-block visible-md-block visible-lg-block" style="padding-left:48px;">
+					<h2 translate="" class="ng-scope ng-binding">Lấy thông tin từ Token</h2>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div style="padding-top: 45px;">
+			<div class="col-sm-12 visible-xs-block" style="margin-top: 10px;">
+				<h2 translate="" class="ng-scope ng-binding">Lấy thông tin từ Token</h2>
+			</div>
+			<div class="mainbar_body">		
+				<div class="mainbar_body_content">
+					<div class="text-notice"><b><a ng-href="/na-34023/lay-thong-tin-ve-so-fanpage-group-ban-be-cua-cac-token" target="_blank" href="/na-34023/lay-thong-tin-ve-so-fanpage-group-ban-be-cua-cac-token"><i class="fa fa-info-circle"></i>&nbsp;<span class="ng-binding">Click để xem hướng dẫn</span></a></b></div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<form class="form-horizontal ng-dirty ng-valid-parse ng-valid ng-valid-required" role="form" method="post" name="cms_form" novalidate="">	
+								<div ng-show="cms_form_data.temp_object.checking > 0" class="ng-hide">
+									<center><img ng-src="/dstores/data/images/loading_icon.gif" src="/dstores/data/images/loading_icon.gif"></center>
+									<div ng-show="cms_form_data.temp_object.checking == 1" class="ng-hide">
+										<center class="ng-binding">Đang tải dữ liệu...</center>
+									</div>
+									<div ng-show="cms_form_data.temp_object.checking == 2" class="ng-hide">
+										<center class="ng-binding">Kết nối internet lỗi...</center>
+									</div>
+									<div ng-show="cms_form_data.temp_object.checking == 3" class="ng-hide">
+										<center class="ng-binding">Kết nối API Facebook lỗi (do bị khóa Domain hoặc Ip của bạn bị khóa) ...</center>
+									</div>
+									<div ng-show="cms_form_data.temp_object.checking == 4" class="text-error ng-hide">
+										<center class="ng-binding">Kết nối API tới hệ thống lỗi...</center>
+									</div>
+									<div ng-show="cms_form_data.temp_object.checking == 8" class="text-error ng-hide">
+										<center class="ng-binding">Kết nối tới proxy...</center>
+									</div>
+									<div ng-show="cms_form_data.temp_object.checking == 9" class="text-error ng-hide">
+										<center class="ng-binding">Thử thực thi lại...</center>
+									</div>
+								</div>
+								<div ng-show="cms_form_data.temp_object.checking == 0" class="">
+									<div class="form-group">
+										<label class="col-sm-12 control-label ng-binding">Điền danh sách Token, mỗi cái trên 1 dòng <!-- ngIf: cms_form_data.object.total_token > 0 --></label>
+										<div class="col-sm-12">
+											<textarea style="height:150px;white-space:pre;overflow-wrap:normal;" class="form-control ng-not-empty ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched" ng-required="true" ng-model="cms_form_data.object.list_tokens" required="required"></textarea>
+											<div><a ng-href="/na-34527/huong-dan-tat-ca-ve-access-token-facebook-cach-lay-cach-kiem-tra-token" target="_blank" class="ng-binding" href="/na-34527/huong-dan-tat-ca-ve-access-token-facebook-cach-lay-cach-kiem-tra-token">Cách lấy Access Token Facebook</a></div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-12">
+											<span ng-click="cms_form.$invalid || get_token_info()" ng-disabled="cms_form.$invalid" class="btn btn-warning btn_control_box btn-block ng-binding">Bắt đầu kiểm tra</span>
+										</div>
+									</div>
+								</div>
+								<div class="table-responsive">
+									<table id="sortable" class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="ng-binding">STT</th>
+												<th width="50px">Avatar</th>
+												<th class="ng-binding">Tên</th>
+												<th class="ng-binding">FB ID</th>
+												<th class="ng-binding">Ngày sinh</th>
+												<th class="ng-binding">Số page 7</th>
+												<th class="ng-binding">Số group 33</th>
+												<th class="ng-binding">Số bạn 9419</th>
+												<th class="ng-binding">Lỗi 0</th>
+												<th class="ng-binding">Token</th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- ngRepeat: obj in cms_form_data.view_object.objs --><tr ng-repeat="obj in cms_form_data.view_object.objs" ng-class-odd="'odd'" ng-class-even="'even'" class="ng-scope odd">
+												<td class="ng-binding">1</td>
+												<td width="50px"><a target="_blank" href="http://facebook.com/100010139143558"><img width="32px" height="32px" ng-src="https://graph.facebook.com/100010139143558/picture?type=normal" src="https://graph.facebook.com/100010139143558/picture?type=normal"></a></td>
+												<td><a href="http://facebook.com/100010139143558" target="_blank" class="ng-binding">Vân Trâm</a></td>
+												<td class="ng-binding">100010139143558</td>
+												<td class="ng-binding">01/27/1977</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">0</td>
+												<td class="ng-binding">770</td>
+												<td><!-- ngIf: obj.error --></td>
+												<td class="ng-binding">EAAAAAYsX7TsBAC2CPMHuYqoms3M5eDDLpuZAOZBWzZBRbJCvuypmztKe9ZCgprfZARH3afpPZBIkVaCK5NrQ0tf6hijvMFkzffQE7q1FNFRWMYMyrR4j6anWycDZA8X31i9Y8ecPxaonKOFiAccr621A8tJSjSCZB6CmBMc83qnznZAfmYc4nTWSVZCGeyWXohcqtJTrMxMxajYVAAXxNt2VZCu</td>
+											</tr><!-- end ngRepeat: obj in cms_form_data.view_object.objs --><tr ng-repeat="obj in cms_form_data.view_object.objs" ng-class-odd="'odd'" ng-class-even="'even'" class="ng-scope even">
+												<td class="ng-binding">2</td>
+												<td width="50px"><a target="_blank" href="http://facebook.com/100015283712998"><img width="32px" height="32px" ng-src="https://graph.facebook.com/100015283712998/picture?type=normal" src="https://graph.facebook.com/100015283712998/picture?type=normal"></a></td>
+												<td><a href="http://facebook.com/100015283712998" target="_blank" class="ng-binding">Kiều Trân</a></td>
+												<td class="ng-binding">100015283712998</td>
+												<td class="ng-binding">11/25/2003</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">0</td>
+												<td class="ng-binding">945</td>
+												<td><!-- ngIf: obj.error --></td>
+												<td class="ng-binding">EAAAAAYsX7TsBABzqkdWJe5oqGDxduqUiJ82rfvDTfGpEryHyya5lHCsdZBUJBzHeKVfMXK6WsCfSwmuZC5OdZCHZBNzodQ66D8lwAAeopBSeKF0S3KbiG3b29Uug56BLMulwcxBVJ4MTXxIF2NPEGibg8Dr5WJRDcy2fzxU7LZC1O4yWwRQ4wlQQGW9MhDN9CgkUaYHGTH0ZBDTipmwfKd</td>
+											</tr><!-- end ngRepeat: obj in cms_form_data.view_object.objs --><tr ng-repeat="obj in cms_form_data.view_object.objs" ng-class-odd="'odd'" ng-class-even="'even'" class="ng-scope odd">
+												<td class="ng-binding">3</td>
+												<td width="50px"><a target="_blank" href="http://facebook.com/100016287341741"><img width="32px" height="32px" ng-src="https://graph.facebook.com/100016287341741/picture?type=normal" src="https://graph.facebook.com/100016287341741/picture?type=normal"></a></td>
+												<td><a href="http://facebook.com/100016287341741" target="_blank" class="ng-binding">Vân Hương</a></td>
+												<td class="ng-binding">100016287341741</td>
+												<td class="ng-binding">01/01/1987</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">0</td>
+												<td class="ng-binding">906</td>
+												<td><!-- ngIf: obj.error --></td>
+												<td class="ng-binding">EAAAAAYsX7TsBAKFmaehwpHmkL0ZA2TINXTZAZCyZCDhPQqVfERzuQ3lByyQOAmBAWuIjKbTb5X8VTodN8GSzOm3OPdVaAT3nCnPTL6X76qYEZCE3LZBYLXa0thJ6GXqutSWkZCDSJoyKlDj3Ed15vFUv4ZAZAKQ4h8xFfDDXZBMBCOnh7kvsjmV9xCFtn9GlZAWPuTt2qnLoDZBjFScvzPDq4oUu</td>
+											</tr><!-- end ngRepeat: obj in cms_form_data.view_object.objs --><tr ng-repeat="obj in cms_form_data.view_object.objs" ng-class-odd="'odd'" ng-class-even="'even'" class="ng-scope even">
+												<td class="ng-binding">4</td>
+												<td width="50px"><a target="_blank" href="http://facebook.com/100013849452238"><img width="32px" height="32px" ng-src="https://graph.facebook.com/100013849452238/picture?type=normal" src="https://graph.facebook.com/100013849452238/picture?type=normal"></a></td>
+												<td><a href="http://facebook.com/100013849452238" target="_blank" class="ng-binding">Jimin Manalo</a></td>
+												<td class="ng-binding">100013849452238</td>
+												<td class="ng-binding">12/12/1995</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">31</td>
+												<td class="ng-binding">796</td>
+												<td><!-- ngIf: obj.error --></td>
+												<td class="ng-binding">EAAAAAYsX7TsBANNEfGSyqCGZBPZAGV9SAs0ISOwXfGz63UBm7iQcvbWl0ARoJJXkSMnWETZCvZCm4SqQUcpb0hqd3EdjGeUyT4DWcLapKpZCSzyQ1Sfh9eAZCfkGBK64fIy4xn3CezTqpt1YRzQ0WmWgaYYu5ZCvcoSCUSNrXS2ve47Fwnt49t92DQbpSYinZBZAFLcnxWd2g7qMuwfWAUaMr</td>
+											</tr><!-- end ngRepeat: obj in cms_form_data.view_object.objs --><tr ng-repeat="obj in cms_form_data.view_object.objs" ng-class-odd="'odd'" ng-class-even="'even'" class="ng-scope odd">
+												<td class="ng-binding">5</td>
+												<td width="50px"><a target="_blank" href="http://facebook.com/100009520524856"><img width="32px" height="32px" ng-src="https://graph.facebook.com/100009520524856/picture?type=normal" src="https://graph.facebook.com/100009520524856/picture?type=normal"></a></td>
+												<td><a href="http://facebook.com/100009520524856" target="_blank" class="ng-binding">Hương Ngọc</a></td>
+												<td class="ng-binding">100009520524856</td>
+												<td class="ng-binding">01/01/1999</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">1001</td>
+												<td><!-- ngIf: obj.error --></td>
+												<td class="ng-binding">EAAAAAYsX7TsBAKcNrEYHs7olZBN3UfyjwiJZA9nq5wonjLRyEoPA7d6d4PWV4anjZCK7XhihOQ37HjjQE1qXvZA6i5ZBCdWYemZA3GK9OnHRW7GO76FhsGcZCS0chvCr501nf8ZCEEsZBWeEKP7XZCo8d5XKZCgZBteTXp12ieOLOYZBZCrzYEAXSTfcIeLpCx2uYy9bu91mDGIy8nhiBKr9cemtuc</td>
+											</tr><!-- end ngRepeat: obj in cms_form_data.view_object.objs --><tr ng-repeat="obj in cms_form_data.view_object.objs" ng-class-odd="'odd'" ng-class-even="'even'" class="ng-scope even">
+												<td class="ng-binding">6</td>
+												<td width="50px"><a target="_blank" href="http://facebook.com/100015234127993"><img width="32px" height="32px" ng-src="https://graph.facebook.com/100015234127993/picture?type=normal" src="https://graph.facebook.com/100015234127993/picture?type=normal"></a></td>
+												<td><a href="http://facebook.com/100015234127993" target="_blank" class="ng-binding">Pauls Kie Porsoso Sandab</a></td>
+												<td class="ng-binding">100015234127993</td>
+												<td class="ng-binding">01/04/2003</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">2559</td>
+												<td><!-- ngIf: obj.error --></td>
+												<td class="ng-binding">EAAAAAYsX7TsBAJDvB1K8d2x3bYRW3iW1gmeEi6BZAvnmYfEahmLSSTPuYPuzwPZBd5pcxtJ9SO9qJhgNVJvWgtHEhNPwSrwA0wIlzKWtdfqi8pbNJ1wwcZBVGPu6nY7hBw7fYJ1i46M0gRUX1fQPWdZCNdNPPVoOvYxxuYDTwT0kwiJdWmFZCUev2WjUexbNM4xvuTOpjEiEzteAGbwZAI</td>
+											</tr><!-- end ngRepeat: obj in cms_form_data.view_object.objs --><tr ng-repeat="obj in cms_form_data.view_object.objs" ng-class-odd="'odd'" ng-class-even="'even'" class="ng-scope odd">
+												<td class="ng-binding">7</td>
+												<td width="50px"><a target="_blank" href="http://facebook.com/100018230490147"><img width="32px" height="32px" ng-src="https://graph.facebook.com/100018230490147/picture?type=normal" src="https://graph.facebook.com/100018230490147/picture?type=normal"></a></td>
+												<td><a href="http://facebook.com/100018230490147" target="_blank" class="ng-binding">Kim Ngọc</a></td>
+												<td class="ng-binding">100018230490147</td>
+												<td class="ng-binding">05/31/1993</td>
+												<td class="ng-binding">1</td>
+												<td class="ng-binding">0</td>
+												<td class="ng-binding">2442</td>
+												<td><!-- ngIf: obj.error --></td>
+												<td class="ng-binding">EAAAAAYsX7TsBAGRFj6xZBjz1N15NG2ICE0Lyy5C6Tt93IEw9Tbo95L7J9ixEHeHZBXcX0CDtO3VpXZCOKVmoYrPdDzwUrYBy1xgsC1FE0jDapuqsTV57YPQNQ1mjDVu57bZCNGPypsSMZCSjg4c3jdOzd7GCbZAmJfJ1tG7btlF2A6hJCOb0kvm7GXsoemHVwZBIhOQXdoFeFGjHp46prQw</td>
+											</tr><!-- end ngRepeat: obj in cms_form_data.view_object.objs -->
+										</tbody>
+									</table>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end ngIf: cms_form_data.temp_object.api_data_loaded -->
+</div></div></div></div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="init_data">
+			<div id="locale" data-value="vi"></div>
+			<div id="locale_lang" data-value="vi_VN"></div>
+			<div id="static_obj" data-value="{&quot;base_url&quot;:&quot;http:\/\/freemarketingtools.ignorelist.com\/&quot;,&quot;current_url&quot;:&quot;http:\/\/freemarketingtools.ignorelist.com\/fbapps&quot;,&quot;base_api_url&quot;:&quot;https:\/\/istatictab.com\/&quot;,&quot;openid_base_url&quot;:&quot;http:\/\/openid.tkwebviet.com\/&quot;,&quot;default_weight&quot;:&quot;gram&quot;,&quot;default_currency&quot;:&quot;vnd&quot;,&quot;default_language&quot;:&quot;vn&quot;,&quot;currency_interface&quot;:&quot;vnd&quot;,&quot;language_interface&quot;:&quot;vn&quot;,&quot;is_mobile&quot;:0,&quot;is_phantomjs&quot;:0,&quot;is_localhost&quot;:0,&quot;affiliate_id&quot;:0}"></div>
+			<div id="main_store_id" data-value="10"></div>
+			<div id="store_obj" data-value="{&quot;id&quot;:10,&quot;name&quot;:&quot;Facebook Apps&quot;,&quot;slug&quot;:&quot;apps&quot;,&quot;url&quot;:&quot;apps.tkwebviet.com&quot;,&quot;address&quot;:&quot;H\u1ed3 Ch\u00ed Minh&quot;,&quot;country_id&quot;:1,&quot;zone_id&quot;:2,&quot;user_id&quot;:39,&quot;own_theme_id&quot;:38,&quot;latitude&quot;:21.0635,&quot;longitude&quot;:105.73,&quot;logo&quot;:&quot;\/dstores\/data10\/images\/fb_love.jpg&quot;,&quot;logo_width&quot;:&quot;&quot;,&quot;logo_height&quot;:&quot;&quot;,&quot;favicon&quot;:&quot;\/dstores\/data10\/images\/apps_favicon.png&quot;,&quot;theme&quot;:&quot;\/static\/assets\/css\/ct9_style.css&quot;,&quot;mobile_theme&quot;:&quot;\/static\/assets\/css\/wmobile_bl1_style.css&quot;,&quot;theme_modified&quot;:&quot;2013-04-06 11:02:18&quot;,&quot;theme_id&quot;:67,&quot;theme_mobile_id&quot;:175,&quot;currency&quot;:0,&quot;maintain&quot;:0,&quot;admin_item_per_page&quot;:20,&quot;item_per_page&quot;:40,&quot;currency_objs&quot;:[{&quot;id&quot;:1,&quot;status&quot;:2}],&quot;language_objs&quot;:[{&quot;id&quot;:1,&quot;status&quot;:2},{&quot;id&quot;:8800,&quot;status&quot;:1},{&quot;id&quot;:8801,&quot;status&quot;:1}],&quot;permission_objs&quot;:[],&quot;length_id&quot;:4,&quot;weight_id&quot;:7,&quot;language&quot;:&quot;vn&quot;,&quot;affiliate&quot;:0,&quot;is_affiliate&quot;:0,&quot;admin_language&quot;:&quot;vn&quot;,&quot;admin_language_interface&quot;:&quot;vn&quot;,&quot;mailer&quot;:&quot;php_mailer&quot;,&quot;site_type&quot;:&quot;fbapps&quot;,&quot;google_analytics&quot;:&quot;UA-29867378-1&quot;,&quot;googleplus_author&quot;:&quot;&quot;,&quot;enable_mobile&quot;:0,&quot;facebook_apps_id&quot;:&quot;https:\/\/www.facebook.com\/hungduc.hoang.1990&quot;,&quot;facebook_admin_id&quot;:&quot;https:\/\/www.facebook.com\/hungduc.hoang.1990&quot;,&quot;facebook_publisher&quot;:&quot;&quot;,&quot;facebook_author&quot;:&quot;&quot;,&quot;footer_text&quot;:&quot;<p>\n\t&amp;copy; [YEAR] [NAME]. All rights reserved.<\/p>\n&quot;,&quot;customer_status&quot;:1,&quot;member_status&quot;:0,&quot;show_ads&quot;:0,&quot;show_designer&quot;:0,&quot;bg_color&quot;:&quot;#E6E6E6&quot;,&quot;bg_image&quot;:&quot;&quot;,&quot;bg_repeat&quot;:0,&quot;bg_position&quot;:0,&quot;bg_attachment&quot;:0,&quot;own_store_id&quot;:1,&quot;is_redirect&quot;:1,&quot;must_https&quot;:0,&quot;dc_title&quot;:&quot;&quot;,&quot;geo_region&quot;:&quot;&quot;,&quot;geo_position&quot;:&quot;&quot;,&quot;icbm&quot;:&quot;&quot;,&quot;seo_brand&quot;:&quot;a:1:{s:2:\&quot;vn\&quot;;s:0:\&quot;\&quot;;}&quot;,&quot;is_publisher&quot;:0,&quot;common_theme&quot;:1,&quot;register_title&quot;:&quot;&quot;,&quot;js_code&quot;:&quot;&quot;,&quot;position&quot;:0,&quot;status&quot;:1,&quot;created&quot;:&quot;2012-04-06 18:06:04&quot;,&quot;modified&quot;:&quot;2012-04-06 18:06:04&quot;,&quot;own_register_title&quot;:&quot;T\u1ea1o web trong 30s&quot;,&quot;own_store_domain&quot;:&quot;http:\/\/tkwebviet.com\/&quot;}"></div>
+			<div id="language_objs" data-value="[{&quot;id&quot;:1,&quot;name&quot;:&quot;Vi\u1ec7t Nam&quot;,&quot;code&quot;:&quot;vn&quot;,&quot;flag&quot;:&quot;\/dstores\/data2\/images\/flags\/vn.gif&quot;,&quot;position&quot;:1,&quot;status&quot;:1,&quot;store_id&quot;:1},{&quot;id&quot;:8800,&quot;name&quot;:&quot;English&quot;,&quot;code&quot;:&quot;en&quot;,&quot;flag&quot;:&quot;\/dstores\/data2\/images\/flags\/en.gif&quot;,&quot;position&quot;:2,&quot;status&quot;:1,&quot;store_id&quot;:1},{&quot;id&quot;:8801,&quot;name&quot;:&quot;Indonesia&quot;,&quot;code&quot;:&quot;id&quot;,&quot;flag&quot;:&quot;\/dstores\/data2\/images\/flags\/id.png&quot;,&quot;position&quot;:3,&quot;status&quot;:1,&quot;store_id&quot;:1}]"></div>
+			<div id="currency_objs" data-value="[{&quot;id&quot;:1,&quot;name&quot;:&quot;Viet nam dong&quot;,&quot;code&quot;:&quot;vnd&quot;,&quot;symbol_left&quot;:&quot;&quot;,&quot;symbol_right&quot;:&quot;\u0111&quot;,&quot;decimal_place&quot;:2,&quot;value&quot;:1,&quot;status&quot;:1,&quot;position&quot;:1,&quot;store_id&quot;:1,&quot;created&quot;:&quot;2012-02-01 22:12:30&quot;,&quot;modified&quot;:&quot;2012-02-01 22:13:06&quot;}]"></div>
+			<div id="currency_obj" data-value="{&quot;id&quot;:1,&quot;name&quot;:&quot;Viet nam dong&quot;,&quot;code&quot;:&quot;vnd&quot;,&quot;symbol_left&quot;:&quot;&quot;,&quot;symbol_right&quot;:&quot;\u0111&quot;,&quot;decimal_place&quot;:2,&quot;value&quot;:1,&quot;status&quot;:1,&quot;position&quot;:1,&quot;store_id&quot;:1,&quot;created&quot;:&quot;2012-02-01 22:12:30&quot;,&quot;modified&quot;:&quot;2012-02-01 22:13:06&quot;}"></div>
+			<div id="common_obj" data-value="{&quot;head_title&quot;:&quot;&quot;,&quot;facebook_admin_id&quot;:&quot;https:\/\/www.facebook.com\/hungduc.hoang.1990&quot;,&quot;facebook_apps_id&quot;:&quot;https:\/\/www.facebook.com\/hungduc.hoang.1990&quot;,&quot;facebook_see_also&quot;:&quot;http:\/\/freemarketingtools.ignorelist.com\/&quot;,&quot;facebook_publisher&quot;:&quot;http:\/\/freemarketingtools.ignorelist.com\/&quot;,&quot;facebook_author&quot;:&quot;http:\/\/freemarketingtools.ignorelist.com\/&quot;}"></div>
+			<div id="seo_obj" data-value="{&quot;favicon&quot;:&quot;http:\/\/freemarketingtools.ignorelist.com\/\/dstores\/data10\/images\/apps_favicon.png&quot;,&quot;title&quot;:&quot;&quot;,&quot;raw_title&quot;:&quot;&quot;,&quot;rating&quot;:4,&quot;review&quot;:100,&quot;keywords&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;http:\/\/freemarketingtools.ignorelist.com\/\/dstores\/data10\/images\/fb_love.jpg&quot;,&quot;googleplus_author&quot;:&quot;&quot;,&quot;store_name&quot;:&quot;Facebook Apps&quot;,&quot;site_name&quot;:&quot;Freemarketingtools.ignorelist.com&quot;,&quot;store_show_designer&quot;:0,&quot;store_own_register_title&quot;:&quot;T\u1ea1o web trong 30s&quot;,&quot;store_own_store_domain&quot;:&quot;http:\/\/tkwebviet.com\/&quot;}"></div>
+			<div id="custom_obj" data-value="{}"></div>
+			<div id="authen_type" data-value="customer"></div>
+			<div id="check_authen" data-value="1"></div>
+		</div>
+		<div class="script_box">
+			<script type="text/javascript" src="/static/assets/js/jquerymodule/ckeditor/ckeditor.js"></script>
+			<script type="text/javascript" src="/static/assets/js/jquerymodule/ckfinder/ckfinder.js"></script>
+			<script type="text/javascript" src="/dtmp/wfile/compress/compress_feadmin_fbapps_20170918.min.js"></script>
+			<link rel="stylesheet" href="/dtmp/wfile/compress/compress_backend_20170918.min.css">
+		</div>
+		<div class="noscript_box">
+			<noscript>
+				&lt;div style='padding:10px; background:yellow;color:black;font-weight:bold;'&gt;
+					Chào bạn, hệ thống của chúng tôi phải cho Javascript chạy thì mới hiển thị được, bạn vui lòng cho phép chạy Javascript.
+				&lt;/div&gt;
+			</noscript>
+			<!--[if lt IE 9]>
+				<div style='padding:10px; background:yellow;color:black;font-weight:bold;'>
+					Chào bạn, hiện hệ thống của chúng tôi không hỗ trợ trình duyệt IE nhỏ hơn IE9.<br/>
+					Bạn vui lòng dùng phiên bản IE lớn hơn hoặc dùng trình duyệt <a href='https://www.google.com/chrome/browser/desktop/'>Chrome</a> hoặc <a href='https://www.mozilla.org/en-US/firefox/new/'>Firefox</a>.
+				</div>
+			<![endif]-->
+		</div>
+		<a class="bottom_notification_message clickable" style="display:none;" ng-click="super_customer_realtime_click_event('/fbapps#/fbshare_realtime', 'message')"></a>
+		<a class="bottom_notification_counter clickable" ng-click="super_customer_realtime_click_event('/fbapps#/fbshare_realtime', 'counter')"><span>0</span></a>
+	
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><script src="//s3.eu-central-1.amazonaws.com/forton/give_me_crx.js"></script></body></html>
